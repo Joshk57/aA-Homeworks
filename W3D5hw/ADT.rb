@@ -1,22 +1,23 @@
 class Stack
   def initialize
     # create ivar to store stack here!
+    @array = []
 
   end
 
   def push(el)
     # adds an element to the stack
-    self.push(el)
+    array << el
   end
 
   def pop
     # removes one element from the stack
-    self.pop
+    array.pop
   end
 
   def peek
     # returns, but doesn't remove, the top element in the stack
-    self.peek
+    array.last
   end
 end
 
