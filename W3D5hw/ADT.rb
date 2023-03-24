@@ -37,3 +37,32 @@ class Queue
     end
 
 end
+
+class Map
+
+    def initialize
+    end
+
+    def set(key, value)
+    end
+
+
+    def get(key)
+    end
+
+    def delete(key)
+    end
+
+    def show
+
+    end
+
+    def set
+    end
+
+
+
+
+end
+
+
