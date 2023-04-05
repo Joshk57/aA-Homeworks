@@ -36,7 +36,11 @@ describe Dessert do
   end
 
   describe "#mix!" do
-    it "shuffles the ingredient array" 
+    it "shuffles the ingredient array" do
+      # Dessert.new("cake", 10, chef)
+      
+      expect(cake.ingredients).to eq(cake.ingredients.shuffle!)
+    end
       
   end
 
@@ -47,6 +51,7 @@ describe Dessert do
     end
 
     it "raises an error if the amount is greater than the quantity" do
+      
       expect{cake.eat(15)}.to raise_error("that's too much")
     end
   end
@@ -58,6 +63,6 @@ describe Dessert do
   end
 
   describe "#make_more" do
-    it "calls bake on the dessert's chef with the dessert passed in"
+    it "calls bake on the dessert's chef with the dessert passed in" 
   end
 end
